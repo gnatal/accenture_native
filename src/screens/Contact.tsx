@@ -52,7 +52,7 @@ export default function Contact() {
                 isSendMessage ? (
                     <LottieView
                         style={style.animation}
-                        source={require('../animation/lottieAntigo.json')}
+                        source={require('../animation/lf30_editor_sokikrzl.json')}
                         autoPlay
                         loop
                     />)
