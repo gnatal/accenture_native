@@ -1,0 +1,72 @@
+
+
+Fazer as provas de react e de inglês.
+
+Nest Js => back end
+
+Next JS => framework (nubank, AirBnB, gitHub)
+
+paginas ou em page ou em SRC
+yarn add typescript @types/node -D
+
+Index = main
+
+Rotas em next => basta estar na pasta do Index
+
+Ex: /pages/tester => localhost:3000/tester
+
+arquivo com _ => arquivo de configuraçãio
+
+gera conteúdo estático => fica como se fosse uma página php
+
+Rota dinamica => next bom pra SEO.
+
+styled components ? css or JS 
+
+página de erro personalizada (404.tsx)
+ou qualquer erro tipo (500.tsx) => erro interno de servidor
+
+style
+
+Economia front e back-end;
+
+principal caracteristica do next server side renderer.
+
+"naturalmente o navegar roda o JS"
+
+
+economiza muito tempo com Rotas e outras coisas
+SEO maximo
+
+problema do styled componets => JS
+
+next can't have styles on the pages folder
+you need to create a pages folder on the style folder
+
+Atomic desing => arquitetura de pastar
+    => organização de components
+    => atomo -> celula -> tecido -> orgão
+
+        Atoms
+        Molecules
+        Organisms
+        Templates
+        Pages
+
+Bem desing => Block Element Modifier
+
+    og-tags => página com conteúdo dinamico
+    og-title => informações de compartilhamento para os serviços do facebook
+
+Next cria arquivos de cache com requisições que se reidrata a cada 36000;
+
+lazyload next vs react.
+contextos parecidos.
+react não salva na aplicação
+next salva (mais rápido)
+
+Não criar várias constantes no styled components
+
+usar classes 
+
+Projeto => não tem redux

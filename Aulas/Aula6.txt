@@ -1,0 +1,23 @@
+useRef => armazena uma informação que sofrerá uma alteração em qualquer ponto do projeto
+
+    Configuração para IOS => safe area view
+    <SafeAreaView /> => Ocupa um trecho da tela e ocupa todos os elementos
+        Components sempre montados na área visível do disposítivo.
+
+    Para Android (funciona como no IOS) 
+        => <DrawLayerAndroid />
+
+    Devem ficar no topo de cada componente
+        Não deve ser colocado no route ou no APP
+        para evitar conflito com headers e etc.
+
+    É normal a aplicação quebrar => rodar o código novamente
+
+    Animações/ Transições => animated react-native {Animated}
+
+    borderless button
+
+    https://webhook.site/#!/ => validar se a api do app esta ok
+        verificar o insominia
+
+    Lotie => free animations for react and react native

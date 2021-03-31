@@ -1,0 +1,20 @@
+Aula 3
+
+Sobre o desafio => alguns hooks e funcionalidades
+Criar um repositorio e dividir o trabalho em branches.
+Mudar o nome e a cara do projeto.
+
+jwt.io => token coder
+pcaote jsonwebtoken
+
+Notion => compartilhar na documentação.
+ duplicate no canto da página.
+
+Publicar os repositórios na vercel
+(netlify)
+
+
+
+Swagger => {
+
+}

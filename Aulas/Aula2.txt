@@ -1,0 +1,12 @@
+Aula 2
+
+
+Recado => Screening
+
+Grupos => planilha
+
+json server.
+
+redux => arquitetura flux.
+
+redux => store, views and actions.

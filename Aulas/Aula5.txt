@@ -1,0 +1,33 @@
+React native
+
+yarn add global expo-cli
+
+
+    yarn create
+
+        template -> blank typescript
+
+    - Css stylesheet
+    - styled components
+
+    *Baixar Expo Go
+
+    Native dica => arquitetura mais limpa possível
+     -  evite styled components;
+    - evite instalar depencias
+
+    Organização de pastas
+        -src -> routes
+
+    pacotes instalados
+        https://reactnavigation.org/docs/getting-started
+        expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
+        -- já inclui gesture e navigation
+        -yarn add @react-navigation/native
+
+        instalar os types tbm
+
+        -stack navigator
+            -yarn add @react-navigation/stack
+            
+        -continuidade no app
