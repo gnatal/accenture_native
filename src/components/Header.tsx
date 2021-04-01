@@ -16,7 +16,7 @@ export default function HeaderComponent({ title, showCancel = true }: IProps) {
     const navigation = useNavigation();
 
     function handleReturnToHome() {
-        navigation.navigate('home')
+        navigation.navigate('Home')
     }
 
 

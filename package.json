@@ -24,6 +24,7 @@
     "react-native-safe-module": "^1.2.0",
     "react-native-screens": "~2.15.2",
     "react-native-web": "~0.13.12",
+    "react-native-webview": "^11.3.2",
     "styled-components": "^5.2.1"
   },
   "devDependencies": {

@@ -22,6 +22,8 @@ export default function Home() {
 
     const fade = useRef(new Animated.Value(0)).current;
 
+
+
     const fadeIn = () => {
         Animated.timing(
             fade,
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#808080"
+        backgroundColor: "#68de5a"
     },
     fadeInStyle: {
         opacity: 1

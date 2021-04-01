@@ -1,0 +1,11 @@
+Slash screen => tela de carregamento
+
+    Alteração da splash screen dentro do expo
+        .app.json
+                "splash": {
+                    "image": "./assets/splash.png",
+                    "resizeMode": "contain",
+                    "backgroundColor": "#ffffff"
+                },
+
+    Extensão autorename tag
