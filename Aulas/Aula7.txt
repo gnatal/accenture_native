@@ -9,3 +9,15 @@ Slash screen => tela de carregamento
                 },
 
     Extensão autorename tag
+
+    Vercel => webapp
+    
+    react native => build native
+        => pwa.
+
+    Documentação
+        - como baixar
+        - como rodar
+        - como foi dividido as tarefas
+        - onde abrir a applicação
+        - bibliotecas (axios, unform, styled components)
