@@ -33,7 +33,7 @@ export default function Details() {
             <View style={style.content}>
                 <Pressable onPress={() => setIsOpen(!isOpen)}><Text style={style.title}>Meu Modal novo</Text></Pressable>
                 {/* <Text style={style.paragraph}>Meu textinho de limão :3 para você meu limãozinho</Text> */}
-                {/* <Text style={style.paragraph} onPress={handleNextScreen}>Acessar contato    </Text> */}
+                <Text style={style.paragraph} onPress={handleNextScreen}>Acessar contato    </Text>
 
             </View>
             <Modal

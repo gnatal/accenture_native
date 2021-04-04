@@ -1,0 +1,2 @@
+Async storage
+    //um sqlite dentro da aplicação

@@ -12,6 +12,8 @@ import { useNavigation } from '@react-navigation/native';
 import LottieView from 'lottie-react-native'
 import { RectButton, ScrollView } from 'react-native-gesture-handler';
 
+import AsyncStorage from '@react-native-async-storage/async-storage'
+
 
 //scroll view vs safe area view;
 
@@ -37,6 +39,18 @@ export default function Contact() {
     const [isSendMessage, setIsSendMessage] = useState(false);
     const [postData, setPostData] = useState<IPostData>({ name: '', email: '', phone: '' });
 
+    const dataStorage = async (data: IPostData) => {
+        await AsyncStorage.setItem('@storage', JSON.stringify(data));
+    }
+
+    const [storedData, setStoredData] = useState<IPostData | null>({ name: '', email: '', phone: '' })
+
+    useEffect(() => {
+        getAllData().then(response => setStoredData(response)).catch(e => console.log("error", e))
+    }, [])
+
+
+
     // useEffect(() => {
     //     sendContact.post('').then(res => res.data);
     // },[])
@@ -49,7 +63,8 @@ export default function Contact() {
         // }
         sendContact.post('', postData).then(
             response => {
-                setIsSendMessage(true)
+                setIsSendMessage(false)
+                dataStorage(postData)
             }
         ).catch(err => alert("erro no enveio"))
     }, [postData]
@@ -66,6 +81,15 @@ export default function Contact() {
     //     }
     // }
 
+    const getAllData = async () => {
+        const stringfied: string | any = await AsyncStorage.getItem('@storage');
+        if (stringfied !== null) {
+            let toReturn: IPostData = JSON.parse(stringfied);
+            return toReturn;
+        }
+        return null;
+    }
+
     function backToHome() {
         navigation.navigate('Home');
     }
@@ -77,6 +101,7 @@ export default function Contact() {
                 behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
                 style={style.container}
             >
+                <Text>{storedData?.name}</Text>
                 {
                     isSendMessage ? (
                         <View style={style.container}>

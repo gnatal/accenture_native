@@ -1,1 +1,0 @@
-App das aulas da gama Accenture de react native
